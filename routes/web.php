@@ -1,24 +1,13 @@
 <?php
 
-// aprendible.com =  Route::get('/',function());
-// aprendible.com/contacto = Route::get('cantacto',funtion())
+Route::get('contactanos',function(){ // contatanos es el nombre de la URL
+	return "Seccion de contactos";
+})->name('contactos'); // Se accede a la ruta pór medio del nombre
 
 Route::get('/',function(){
-	return "Saludos";
+	echo "<a href=".route('contactos').">Contatos 1 </a><br>";
+	echo "<a href=".route('contactos').">Contatos 1 </a><br>";
+	echo "<a href=".route('contactos').">Contatos 1 </a><br>";
+	echo "<a href=".route('contactos').">Contatos 1 </a><br>";
+	echo "<a href=".route('contactos').">Contatos 1 </a><br>";
 });
-
-Route::get('contacto',function(){
-	return "Bienvenido a contacto";
-});
-
-
-// Parametros obligatorios
-Route::get('saludo/{nombre}',funtion($nombre){
-	return "Saludos".$nombre;
-});
-
-// Parametros opcionales
-Route::get('saludo/{nombre?}',funtion($nombre = "invitado"){
-	return "Saludos".$nombre;
-});
-
