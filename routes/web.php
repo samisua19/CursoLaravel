@@ -10,4 +10,6 @@
 //Route::get('/portfolio','PortfolioController@index')->name('portfolio'); // se cambia por la de arriba
 //Route::view('/contact','contact')->name('contact');
 
-Route::resource('proyects','PortfolioController'); // crear rutas para metodos resources
+Route::resource('projects','PortfolioController'); // crear rutas para metodos resources
+//Route::resource('projects','PortfolioController')->only(['index','show']); // mostrar solo rutas a esos metodos
+//Route::resource('projects','PortfolioController')->except(['index','show']); // crear rutas para metodos resources
