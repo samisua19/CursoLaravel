@@ -17,7 +17,7 @@ Route::get('saludo/{nombre}',funtion($nombre){
 	return "Saludos".$nombre;
 });
 
-// Parametros obligatorios
+// Parametros opcionales
 Route::get('saludo/{nombre?}',funtion($nombre = "invitado"){
 	return "Saludos".$nombre;
 });
