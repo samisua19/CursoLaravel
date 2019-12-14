@@ -1,11 +1,5 @@
 <?php
 
-Route::get('/',function(){
-	$nombre = "Jorge";
+Route::view('/','home',['nombre'=>'Jorge']); // cuando se retornan vistas con pocas o ninguna informacion
 
-	 //return view('home')->with('nombre',$nombre);
-	//return view('home')->with(['nombre'=>$nombre]);
-	//return view('home',['nombre'=>$nombre]);
-	return view('home',compact('nombre'));
 
-})->name('home');

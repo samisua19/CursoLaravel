@@ -5,6 +5,6 @@
 </head>
 <body>
 <h1>Home</h1>
-Bienveni@ <?php echo $nombre ?>
+Bienveni@ <?php echo $nombre ?? "Invitado" ?>
 </body>
 </html>
