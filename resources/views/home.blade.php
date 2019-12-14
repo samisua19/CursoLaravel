@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/portfolio">Portfolio</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
-	</nav>
-<h1>Home</h1>
-Bienveni@ <?php echo $nombre ?? "Invitado" ?>
+@extends('layout') {{-- Directiva de blade que trae la plantilla en views--}}
 
-Bienveni@ {{  $nombre ?? "Invitado" }}
-</body>
-</html>
+@section('title')
+Home
+@endsection
+
+@section('content') {{--inicio de contenido dinamico--}}
+ 	{{-- Donde va el contenido dinamico --}}
+ 	<h1>Home</h1>
+@endsection {{--fin de contenido dinamico--}}
